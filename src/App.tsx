@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 export default function App() {
   return (
     <div className='min-h-screen bg-slate-800'>
-      <div className='px-40'>
+      <div className='px-10 md:px-40'>
         <Navbar />
         <Hero />
         <Projects />

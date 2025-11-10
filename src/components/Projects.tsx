@@ -1,16 +1,20 @@
 /** @format */
 
+import { useLanguage } from '../contexts/LanguageContext';
+
 export default function Projects() {
+  const { t } = useLanguage();
+  
   return (
     <section id='projects' className='font-iceland text-white h-full'>
-      <div className='text-[30px] md:text-[36px] flex'>
+      <div className='text-[24px] md:text-[30px] flex'>
         <span className='text-[#ff1e8b]'>#</span>
-        projects{" "}
+        {t('projects.title')}{" "}
         <div className='mt-6 md:mt-7 ml-6 md:ml-10 min-w-15 md:w-50 h-[1px] bg-[#ff1e8b]'></div>
         <a
           href='#projects'
-          className='text-[16px] md:text-[1.2rem] text-white/85 hover:text-white mt-[11px] md:mt-3.5 ml-auto'>
-          View all
+          className='text-[14px] md:text-[16px] text-white/85 hover:text-white mt-[11px] md:mt-3.5 ml-auto'>
+          {t('projects.viewAll')}
         </a>
       </div>
       <div className="flex flex-col md:flex-row gap-10">
@@ -27,7 +31,7 @@ export default function Projects() {
             />
           </a>
           <div className='mx-5 flex flex-col flex-grow'>
-            <p className='text-[30px] mt-3'>Taxi</p>
+            <p className='text-[24px] mt-3'>Taxi</p>
             <p className='text-white/80 mt-3 flex-grow'>
               Next.js, React, Vite, JavaScript, Tailwind CSS, C#, SQLite
             </p>
@@ -59,7 +63,7 @@ export default function Projects() {
             />
           </a>
           <div className='mx-5 flex flex-col flex-grow'>
-            <p className='text-[30px] mt-3'>Burger</p>
+            <p className='text-[24px] mt-3'>Burger</p>
             <p className='text-white/80 mt-3 flex-grow'>
               React, Vite, JavaScript, Tailwind CSS, Redux Toolkit
             </p>

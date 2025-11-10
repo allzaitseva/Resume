@@ -1,5 +1,6 @@
 /** @format */
 import { useEffect } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 interface MobileDrawerProps {
   open: boolean;
@@ -7,6 +8,7 @@ interface MobileDrawerProps {
 }
 
 export default function MobileDrawer({ open, setOpen }: MobileDrawerProps) {
+  const { t } = useLanguage();
   useEffect(() => {
     document.documentElement.style.overflow = open ? "hidden" : "";
     return () => {
@@ -50,25 +52,25 @@ export default function MobileDrawer({ open, setOpen }: MobileDrawerProps) {
             href='#projects'
             className='py-3 px-2 hover:bg-white/15 rounded-md'
             onClick={() => setOpen(false)}>
-            <span className='text-[#ff1e8b]'>#</span>projects
+            <span className='text-[#ff1e8b]'>#</span>{t('nav.projects')}
           </a>
           <a
             href='#skills'
             className='py-3 px-2 hover:bg-white/15 rounded-md'
             onClick={() => setOpen(false)}>
-            <span className='text-[#ff1e8b]'>#</span>skills
+            <span className='text-[#ff1e8b]'>#</span>{t('nav.skills')}
           </a>
           <a
             href='#about'
             className='py-3 px-2 hover:bg-white/15 rounded-md'
             onClick={() => setOpen(false)}>
-            <span className='text-[#ff1e8b]'>#</span>about me
+            <span className='text-[#ff1e8b]'>#</span>{t('nav.about')}
           </a>
           <a
             href='#contact'
             className='py-3 px-2 hover:bg-white/15 rounded-md'
             onClick={() => setOpen(false)}>
-            <span className='text-[#ff1e8b]'>#</span>contact
+            <span className='text-[#ff1e8b]'>#</span>{t('nav.contact')}
           </a>
         </nav>
       </aside>

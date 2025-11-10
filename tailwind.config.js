@@ -4,7 +4,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                iceland: ['"Iceland"', 'sans-serif'],
+                iceland: ['"Kanit"', 'sans-serif'],
             },
         },
     },

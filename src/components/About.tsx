@@ -7,8 +7,8 @@ export default function About() {
         <span className='text-[#ff1e8b]'>#</span>
         about me <div className='mt-6 md:mt-7 ml-10 min-w-25 md:w-60 h-[1px] bg-[#ff1e8b]'></div>
       </div>
-      <div className="text-[24px] text-white/80 mt-10 w-auto md:w-165">
-        <p>Hi, I’m Olena Zaitseva, a front-end developer based in Prague.</p>
+      <div className="text-[18px] md:text-[24px] text-white/80 mt-10 w-auto md:w-165">
+        <p>Hi, I'm Olena Zaitseva, a front-end developer based in Prague.</p>
         <p className="mt-5">
           For a long time, I worked as a digital artist, drawing on my tablet
           and creating illustrations.

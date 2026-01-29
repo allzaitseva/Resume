@@ -30,6 +30,8 @@ const translations = {
     'projects.viewAll': 'View all',
     'projects.taxi.description': 'Next.js, React, Vite, JavaScript, Tailwind CSS, C#, SQLite',
     'projects.burger.description': 'React, Vite, JavaScript, Tailwind CSS, Redux Toolkit',
+    'projects.rehab.title': 'Rehabilitation',
+    'projects.rehab.description': 'JavaScript, Tailwind CSS',
     'projects.live': 'Live',
     'projects.github': 'GitHub',
 
@@ -83,7 +85,9 @@ const translations = {
     'projects.viewAll': 'Zobrazit vše',
     'projects.taxi.description': 'Next.js, React, Vite, JavaScript, Tailwind CSS, C#, SQLite',
     'projects.burger.description': 'React, Vite, JavaScript, Tailwind CSS, Redux Toolkit',
-    'projects.live': 'Živě',
+    'projects.rehab.title': 'Rehabilitation',
+    'projects.rehab.description': 'JavaScript, Tailwind CSS',
+    'projects.live': 'Live',
     'projects.github': 'GitHub',
 
     // Skills
